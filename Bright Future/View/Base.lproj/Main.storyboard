@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bright_Future" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-wallie" translatesAutoresizingMaskIntoConstraints="NO" id="fDd-ub-07d">
+                                <rect key="frame" x="148.66666666666666" y="41" width="116.99999999999997" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="eM1-f3-fqe"/>
+                                    <constraint firstAttribute="width" constant="117" id="l9o-yC-dZb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quotecard" translatesAutoresizingMaskIntoConstraints="NO" id="ztl-XO-kJT">
+                                <rect key="frame" x="20" y="90" width="374" height="522"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ztl-XO-kJT" secondAttribute="height" multiplier="187:261" id="8ao-zV-hnU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No matter how small you start, start something that matters" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjC-pK-kmA">
+                                <rect key="frame" x="51" y="182" width="313" height="281"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="281" id="Iso-Jn-apJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steve Jobs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaI-KF-Naa">
+                                <rect key="frame" x="147" y="519" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.9882352941176471" green="0.28235294117647058" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htj-tx-dqb">
+                                <rect key="frame" x="20" y="636" width="374" height="48"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.28235294119999998" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="VoC-eQ-LeQ"/>
+                                </constraints>
+                                <state key="normal" title="Inspire Me">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="inspireMeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hx0-yd-J7i"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumb_steve" translatesAutoresizingMaskIntoConstraints="NO" id="Ex9-pI-3oU">
+                                <rect key="frame" x="51" y="489" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Wu0-uW-bIM"/>
+                                    <constraint firstAttribute="height" constant="80" id="q91-sK-IYZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ztl-XO-kJT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4ee-4o-D8L"/>
+                            <constraint firstItem="htj-tx-dqb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8MB-Ai-FFo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="htj-tx-dqb" secondAttribute="trailing" constant="20" id="8qZ-w4-9CH"/>
+                            <constraint firstItem="gaI-KF-Naa" firstAttribute="top" secondItem="xjC-pK-kmA" secondAttribute="bottom" constant="56" id="9hp-0U-p5x"/>
+                            <constraint firstItem="Ex9-pI-3oU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="BD7-Jd-F22"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xjC-pK-kmA" secondAttribute="trailing" constant="50" id="H1t-vZ-bzW"/>
+                            <constraint firstItem="htj-tx-dqb" firstAttribute="top" secondItem="ztl-XO-kJT" secondAttribute="bottom" constant="24" id="HA6-9V-WFG"/>
+                            <constraint firstItem="fDd-ub-07d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hqn-3o-3sv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ztl-XO-kJT" secondAttribute="trailing" constant="20" id="PQm-cl-N8j"/>
+                            <constraint firstItem="Ex9-pI-3oU" firstAttribute="top" secondItem="xjC-pK-kmA" secondAttribute="bottom" constant="26" id="Yhh-zD-AGl"/>
+                            <constraint firstItem="gaI-KF-Naa" firstAttribute="leading" secondItem="Ex9-pI-3oU" secondAttribute="trailing" constant="16" id="eww-3E-hof"/>
+                            <constraint firstItem="ztl-XO-kJT" firstAttribute="top" secondItem="fDd-ub-07d" secondAttribute="bottom" constant="8" id="is7-xR-ddI"/>
+                            <constraint firstItem="fDd-ub-07d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="pf8-Ws-4V2"/>
+                            <constraint firstItem="xjC-pK-kmA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="tBR-1w-8Pr"/>
+                            <constraint firstItem="xjC-pK-kmA" firstAttribute="top" secondItem="fDd-ub-07d" secondAttribute="bottom" constant="100" id="z23-uN-rcy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="authorImageView" destination="Ex9-pI-3oU" id="hww-8o-7ih"/>
+                        <outlet property="authorNameLabel" destination="gaI-KF-Naa" id="hMA-V4-asc"/>
+                        <outlet property="quoteTextLabel" destination="xjC-pK-kmA" id="mWR-F0-rwD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="146"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo-wallie" width="353" height="113"/>
+        <image name="quotecard" width="361" height="484"/>
+        <image name="thumb_steve" width="80" height="80"/>
+    </resources>
+</document>
